@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>天气小助手</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="jquery-3.1.1.js"></script>
+    <script src="index.js"></script>
+
+</head>
+<body>
+<div class="wrap" id="wrap">
+    <div class="top">
+        <h1>全国天气查询小助手</h1>
+        <div class="btn">
+            <input type="text" id="input" placeholder="暂时不可用">
+            <button id="btn" disabled=disabled>查询天气</button>
+        </div>
+
+    </div>
+    <div class="content">
+        <div class="left" id="weather_icon">
+            <img src="" alt="">
+        </div>
+        <div class="right">
+            <div class="right-top">
+                城市 :<span id="citynm">数据正在加载中...</span>|
+                日期 :<span id="days">数据正在加载中...</span>|
+                星期 :<span id="week">数据正在加载中...</span>|
+                天气 :<span id="weather">数据正在加载中...</span>
+            </div>
+            <div class="right-bottom">
+                <div class="wendu">
+                    最低温度 :<span id="temp_low"></span>|
+                    最高温度 :<span id="temp_high"></span>|
+                    风向 :<span id="wind"></span>|
+                    风力 :<span id="winp"></span>
+                </div>
+                <!--<div class="ziwaixian">-->
+                <!--<span>紫外线强度 :</span>-->
+                <!--<span>洗车指数 :</span>-->
+                <!--<span>感冒指数 :</span>-->
+                <!--<span>穿衣指数 :</span>-->
+                <!--</div>-->
+            </div>
+        </div>
+
+    </div>
+    <div class="content">
+        <div class="left" id="weather_icon2">
+            <img src="" alt="">
+        </div>
+        <div class="right">
+            <div class="right-top">
+                城市 :<span id="citynm2">数据正在加载中...</span>|
+                日期 :<span id="days2">数据正在加载中...</span>|
+                星期 :<span id="week2">数据正在加载中...</span>|
+                天气 :<span id="weather2">数据正在加载中...</span>
+            </div>
+            <div class="right-bottom">
+                <div class="wendu">
+                    最低温度 :<span id="temp_low2"></span>|
+                    最高温度 :<span id="temp_high2"></span>|
+                    风向 :<span id="wind2"></span>|
+                    风力 :<span id="winp2"></span>
+                </div>
+                <!--<div class="ziwaixian">-->
+                <!--<span>紫外线强度 :</span>-->
+                <!--<span>洗车指数 :</span>-->
+                <!--<span>感冒指数 :</span>-->
+                <!--<span>穿衣指数 :</span>-->
+                <!--</div>-->
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="content">
+        <div class="left" id="weather_icon3">
+            <img src="" alt="">
+        </div>
+        <div class="right">
+            <div class="right-top">
+                城市 :<span id="citynm3">数据正在加载中...</span>|
+                日期 :<span id="days3">数据正在加载中...</span>|
+                星期 :<span id="week3">数据正在加载中...</span>|
+                天气 :<span id="weather3">数据正在加载中...</span>
+            </div>
+            <div class="right-bottom">
+                <div class="wendu">
+                    最低温度 :<span id="temp_low3"></span>|
+                    最高温度 :<span id="temp_high3"></span>|
+                    风向 :<span id="wind3"></span>|
+                    风力 :<span id="winp3"></span>
+                </div>
+                <!--<div class="ziwaixian">-->
+                <!--<span>紫外线强度 :</span>-->
+                <!--<span>洗车指数 :</span>-->
+                <!--<span>感冒指数 :</span>-->
+                <!--<span>穿衣指数 :</span>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="left" id="weather_icon4">
+            <img src="" alt="">
+        </div>
+        <div class="right">
+            <div class="right-top">
+                城市 :<span id="citynm4">数据正在加载中...</span>|
+                日期 :<span id="days4">数据正在加载中...</span>|
+                星期 :<span id="week4">数据正在加载中...</span>|
+                天气 :<span id="weather4">数据正在加载中...</span>
+            </div>
+            <div class="right-bottom">
+                <div class="wendu">
+                    最低温度 :<span id="temp_low4"></span>|
+                    最高温度 :<span id="temp_high4"></span>|
+                    风向 :<span id="wind4"></span>|
+                    风力 :<span id="winp4"></span>
+                </div>
+                <!--<div class="ziwaixian">-->
+                <!--<span>紫外线强度 :</span>-->
+                <!--<span>洗车指数 :</span>-->
+                <!--<span>感冒指数 :</span>-->
+                <!--<span>穿衣指数 :</span>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="left" id="weather_icon5">
+            <img src="" alt="">
+        </div>
+        <div class="right">
+            <div class="right-top">
+                城市 :<span id="citynm5">数据正在加载中...</span>|
+                日期 :<span id="days5">数据正在加载中...</span>|
+                星期 :<span id="week5">数据正在加载中...</span>|
+                天气 :<span id="weather5">数据正在加载中...</span>
+            </div>
+            <div class="right-bottom">
+                <div class="wendu">
+                    最低温度 :<span id="temp_low5"></span>|
+                    最高温度 :<span id="temp_high5"></span>|
+                    风向 :<span id="wind5"></span>|
+                    风力 :<span id="winp5"></span>
+                </div>
+                <!--<div class="ziwaixian">-->
+                <!--<span>紫外线强度 :</span>-->
+                <!--<span>洗车指数 :</span>-->
+                <!--<span>感冒指数 :</span>-->
+                <!--<span>穿衣指数 :</span>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="left" id="weather_icon6">
+            <img src="" alt="">
+        </div>
+        <div class="right">
+            <div class="right-top">
+                城市 :<span id="citynm6">数据正在加载中...</span>|
+                日期 :<span id="days6">数据正在加载中...</span>|
+                星期 :<span id="week6">数据正在加载中...</span>|
+                天气 :<span id="weather6">数据正在加载中...</span>
+            </div>
+            <div class="right-bottom">
+                <div class="wendu">
+                    最低温度 :<span id="temp_low6"></span>|
+                    最高温度 :<span id="temp_high6"></span>|
+                    风向 :<span id="wind6"></span>|
+                    风力 :<span id="winp6"></span>
+                </div>
+                <!--<div class="ziwaixian">-->
+                <!--<span>紫外线强度 :</span>-->
+                <!--<span>洗车指数 :</span>-->
+                <!--<span>感冒指数 :</span>-->
+                <!--<span>穿衣指数 :</span>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="left" id="weather_icon7">
+            <img src="" alt="">
+        </div>
+        <div class="right">
+            <div class="right-top">
+                城市 :<span id="citynm7">数据正在加载中...</span>|
+                日期 :<span id="days7">数据正在加载中...</span>|
+                星期 :<span id="week7">数据正在加载中...</span>|
+                天气 :<span id="weather7">数据正在加载中...</span>
+            </div>
+            <div class="right-bottom">
+                <div class="wendu">
+                    最低温度 :<span id="temp_low7"></span>|
+                    最高温度 :<span id="temp_high7"></span>|
+                    风向 :<span id="wind7"></span>|
+                    风力 :<span id="winp7"></span>
+                </div>
+                <!--<div class="ziwaixian">-->
+                <!--<span>紫外线强度 :</span>-->
+                <!--<span>洗车指数 :</span>-->
+                <!--<span>感冒指数 :</span>-->
+                <!--<span>穿衣指数 :</span>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>
