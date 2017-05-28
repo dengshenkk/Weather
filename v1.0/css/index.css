@@ -34,11 +34,9 @@ body{
     outline:none;
     border:none;
     border-radius: 5px;
-    background-color: #00e900;
 }
 .top .btn form input:first-child{
     padding-left: 20px;
-    background-color: #fff;
 
 }
 
