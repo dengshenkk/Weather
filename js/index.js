@@ -9,8 +9,8 @@ $(function () {
     var input = $('#input').val();
     var url = 'http://api.k780.com/?app=weather.future&weaid=' + input + '&appkey=25524&sign=7d04b1dbed8787c2efbb740ec936e0ce&format=json&jsoncallback=data';
     myAjax(url)
-
-
+    var script=$('<script scr="url"></script>');
+    $('head').append(script)
     $('#btn').on('click', function (event) {
         event.preventDefault()
         var input = $('#input').val()
@@ -115,6 +115,9 @@ $(function () {
             },
             error: function (msg) {
                 console.log(msg.readyState + '/' + msg.status);
+            },
+            callback:function (data) {
+                console.log(data)
             }
         });
     }
