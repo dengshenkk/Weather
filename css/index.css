@@ -24,16 +24,27 @@ body{
 .top h1{
     text-align: left;
 }
-.top .btn{
+.top .btn form{
+    height: 35px;
     margin-left: 20px;
     display: flex;
     justify-content: center;
 }
+.top .btn form input{
+    outline:none;
+    border:none;
+    border-radius: 5px;
+}
+.top .btn form input:first-child{
+    padding-left: 20px;
+
+}
+
 .content{
 
     width: 960px;
-    margin: 20px auto;
-    /*background-color: #00ff00;*/
+    margin: 40px auto;
+    background-color: #84caf5;
     overflow: hidden;
     /*display: flex;*/
     /*justify-content: center;*/

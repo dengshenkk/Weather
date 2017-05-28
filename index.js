@@ -4,31 +4,29 @@
 
 
 $(function () {
-    var url = 'http://api.k780.com/?app=weather.future&weaid=165&appkey=25524&sign=7d04b1dbed8787c2efbb740ec936e0ce&format=json&jsoncallback=data'
-    // var url='http://api.k780.com'
+
+    $('#input').focus().select();
+    var input = $('#input').val();
+    var url = 'http://api.k780.com/?app=weather.future&weaid=' + input + '&appkey=25524&sign=7d04b1dbed8787c2efbb740ec936e0ce&format=json&jsoncallback=data';
     myAjax(url)
-    $('')
-    $('#btn').on('click', function () {
-        console.log($('#weather_icon').children);
-        var inputText = $('#input').val()
-        console.log(inputText);
+
+
+    $('#btn').on('click', function (event) {
+        event.preventDefault()
+        var input = $('#input').val()
+        var url = 'http://api.k780.com/?app=weather.future&weaid=' + input + '&appkey=25524&sign=7d04b1dbed8787c2efbb740ec936e0ce&format=json&jsoncallback=data'
         $('#citynm')
 
         myAjax(url)
     });
-
-
     function myAjax(url) {
         $.ajax({
             type: 'get',
-            // async: false,
             url: url,
             dataType: 'jsonp',
             jsonp: 'callback',
             jsonpCallback: 'data',
             success: function (data) {
-                console.log(data);
-
                 for (var k in data.result) {
                     $('#citynm').text(data.result[0].citynm);
                     $('#days').text(data.result[0].days);
@@ -114,13 +112,9 @@ $(function () {
 
 
                 }
-                // $('#weather_icon img').attr('src','http://api.k780.com:88/upload/weather/d/21.gif')
-                // console.log(data.result[0].weather_icon);
             },
             error: function (msg) {
-
                 console.log(msg.readyState + '/' + msg.status);
-
             }
         });
     }

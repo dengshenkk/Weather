@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>天气小助手</title>
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/jquery-3.1.1.js"></script>
-    <script src="js/index.js"></script>
+    <script src="jquery-3.1.1.js"></script>
+    <script src="index.js"></script>
 
 </head>
 <body>
@@ -13,8 +13,11 @@
     <div class="top">
         <h1>全国天气查询小助手</h1>
         <div class="btn">
-            <input type="text" id="input" placeholder="暂时不可用">
-            <button id="btn" disabled=disabled>查询天气</button>
+
+            <form id="form">
+                <input type="text" id="input" value="广州">
+                <input type="submit" value="单击 / 回车" id="btn">
+            </form>
         </div>
 
     </div>
@@ -72,13 +75,6 @@
                 <!--</div>-->
             </div>
         </div>
-
-
-
-
-
-
-
 
 
     </div>
